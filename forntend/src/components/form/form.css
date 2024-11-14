@@ -1,0 +1,96 @@
+/* Center the form container */
+.contact-form-container {
+  /* max-width: 600px; */
+  width: 35%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Center horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading{
+  text-align: center;
+}
+/* Form rows and input styles */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Submit and navigation buttons */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+/* Styling for the navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 84px;
+  margin-right: 84px;
+}
+
+.nav-btn {
+  background-color: #2196F3;
+}
+
+.nav-btn:hover {
+  background-color: #0b7dda;
+}
+
+.success {
+  color: green;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
