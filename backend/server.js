@@ -11,7 +11,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Atlas connection
-const uri = 'mongodb+srv://dikshakushwahqa:MFqewJQ0VRT4aI3F@cluster0.5jmix.mongodb.net/formData';
+// const uri = 'mongodb+srv://dikshakushwahqa:MFqewJQ0VRT4aI3F@cluster0.5jmix.mongodb.net/formData';
+const uri = 'mongodb+srv://devAdmin:devAdmin@cluster0.b66h6hm.mongodb.net/training_guides';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
