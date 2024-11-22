@@ -79,7 +79,6 @@ app.delete('/formdata/:id', (req, res) => {
     .then(() => res.status(200).json('Form data deleted successfully'))
     .catch(err => res.status(400).json(`Error: ${err}`));
 });
-// Existing code...
 
 // GET route to fetch all form submissions
 app.get('/formdata', (req, res) => {
@@ -87,23 +86,6 @@ app.get('/formdata', (req, res) => {
     .then(data => res.status(200).json(data))
     .catch(err => res.status(400).json(`Error: ${err}`));
 });
-
-// POST route to save the file name submitted via third-party file uploader
-// app.post('/upload-file', (req, res) => {
-//   const { fileName } = req.body;  // Assume the file name is sent in the request body
-
-//   if (!fileName) {
-//     return res.status(400).json({ error: 'File name is required' });
-//   }
-
-//   // Save the file name in the MongoDB database
-//   const newFileData = new FormData({ fileName });
-
-//   newFileData.save()
-//     .then(() => res.status(200).json('File name saved successfully'))
-//     .catch(err => res.status(400).json(`Error: ${err}`));
-// });
-
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
